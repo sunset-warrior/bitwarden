@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
         var shouldShowSplashScreen = true
         installSplashScreen().setKeepOnScreenCondition { shouldShowSplashScreen }
         super.onCreate(savedInstanceState)
-        window.decorView.filterTouchesWhenObscured = true
+        // window.decorView.filterTouchesWhenObscured = true
         if (savedInstanceState == null) {
             mainViewModel.trySendAction(MainAction.ReceiveFirstIntent(intent = intent))
         }
